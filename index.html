@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuovo Progetto</title>
+    <title>Vue-Hello</title>
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,9 +23,15 @@
 </head>
 <body>
     <div id="root">
-        {{message}}
-        <h1>{{messageSecond}}</h1>
-        <!-- code -->
+        <div class="container mt-3">
+            <h1>{{secondMessage}}</h1>
+            <span class="fw-semibold">{{message}}</span>
+            <p class="fw-light">
+                <h3>{{textMessage.titleMessage}}</h3>
+            </p>
+            <input type="text-area" class="form-control" v-model="textMessage.textAreaMes">
+        </div>
+
     </div>
 
     <!-- Bootstrap JS -->

@@ -4,7 +4,12 @@ createApp({
     data() {
       return {
         message: 'Hello Vue!',
-        messageSecond: 'look me! I use Vue'
+        secondMessage: "look me! I'm using Vue",
+
+        textMessage: {
+            titleMessage: 'Title message',
+            textAreaMes: ''
+        }
       }
     }
   }).mount('#root')
