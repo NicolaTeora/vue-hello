@@ -18,11 +18,15 @@ createApp({
     
     methods: {
       upNumer(){
-        if (this.count == 20){
+        if (this.count == 10){
           this.count = 0;
         } else {
           this.count++;
         }
+      },
+      
+      resetNumber(){
+        this.count = 0;
       }
     }
   }).mount('#root')
